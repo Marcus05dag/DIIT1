@@ -105,6 +105,8 @@ class ViewController: UIViewController {
         
         
         // мы фиксируем изменения person и сохраняем их, вызывая контекст объекта
+        
+        
         do {
             try managedContext.save()
             people.append(person)
@@ -115,8 +117,9 @@ class ViewController: UIViewController {
         
     }
     
+
   
-    
+
 
 }
 // MARK:EXTENSION
@@ -157,7 +160,7 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-            
+        
                if editingStyle == .delete {
 
                // процесс между началом и концом удаление
@@ -176,7 +179,7 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
 
 
 
-
+                tableView.reloadData()
                //конец удаление строки и ячейки
                tableView.endUpdates()
 

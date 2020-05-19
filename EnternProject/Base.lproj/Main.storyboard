@@ -25,14 +25,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="5Jn-sV-KNQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="43E-pA-NXH"/>
-                            <constraint firstItem="5Jn-sV-KNQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6li-m0-Pbn"/>
-                            <constraint firstItem="5Jn-sV-KNQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Crf-fa-I0o"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Jn-sV-KNQ" secondAttribute="bottom" id="Uwg-2H-S8K"/>
-                            <constraint firstItem="5Jn-sV-KNQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V8d-Gk-gCT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Jn-sV-KNQ" secondAttribute="trailing" id="X0Y-xt-A29"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Jn-sV-KNQ" secondAttribute="bottom" id="YEX-n8-kqd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Jn-sV-KNQ" secondAttribute="trailing" id="gqZ-GZ-U3B"/>
+                            <constraint firstItem="5Jn-sV-KNQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="43E-pA-NXH"/>
+                            <constraint firstItem="5Jn-sV-KNQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6li-m0-Pbn"/>
+                            <constraint firstItem="5Jn-sV-KNQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Crf-fa-I0o"/>
+                            <constraint firstAttribute="bottom" secondItem="5Jn-sV-KNQ" secondAttribute="bottom" constant="20" symbolic="YES" id="Uwg-2H-S8K"/>
+                            <constraint firstItem="5Jn-sV-KNQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="V8d-Gk-gCT"/>
+                            <constraint firstAttribute="trailing" secondItem="5Jn-sV-KNQ" secondAttribute="trailing" id="X0Y-xt-A29"/>
+                            <constraint firstAttribute="bottom" secondItem="5Jn-sV-KNQ" secondAttribute="bottom" constant="20" symbolic="YES" id="YEX-n8-kqd"/>
+                            <constraint firstAttribute="trailing" secondItem="5Jn-sV-KNQ" secondAttribute="trailing" id="gqZ-GZ-U3B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -9,6 +9,7 @@
 import Foundation
 
 class BaseService  {
+    // наши ошибки
     enum ServerError:Error {
         
         case noDataProvided
@@ -22,7 +23,7 @@ class BaseService  {
     func loadPhotos (onComplete: @escaping ([PhotoModel]) -> Void ,onError:@escaping(Error) -> Void) {
         //№1
         //создаем url для запроса
-        let urlString = NetworkConstants.baseURL + "/photos?client_id=" + NetworkConstants.accessKey
+        let urlString = NetworkConstants.baseURL + "/photos/random?count=10&client_id=" + NetworkConstants.accessKey
         
         //№2
         //создаем URL объект из нашего url запроса
@@ -42,8 +43,9 @@ class BaseService  {
             //№4
             guard let data = data else {
                 error?.localizedDescription
-                onError(ServerError.noDataProvided)
-                
+                DispatchQueue.main.async {
+                    onError(ServerError.noDataProvided)
+                }
                 return
             }
             
@@ -55,7 +57,9 @@ class BaseService  {
             //№5
             guard let photos = try?JSONDecoder().decode([PhotoModel].self, from: data) else {
                 print("could not decode")
-                onError(ServerError.failedDecode)
+                DispatchQueue.main.async {
+                    onError(ServerError.failedDecode)
+                }
                 return
                 
                 

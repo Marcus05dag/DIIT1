@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8498D712473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8498D6F2473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift */; };
+		E8498D722473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8498D702473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift */; };
 		E87D8F7924672B6E00E46497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D8F7824672B6E00E46497 /* AppDelegate.swift */; };
 		E87D8F7B24672B6E00E46497 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D8F7A24672B6E00E46497 /* SceneDelegate.swift */; };
 		E87D8F7D24672B6E00E46497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D8F7C24672B6E00E46497 /* ViewController.swift */; };
@@ -18,12 +20,16 @@
 		E88B4A56247015F6002FD1B6 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88B4A55247015F6002FD1B6 /* UIImageView.swift */; };
 		E88B4A5B2470402F002FD1B6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88B4A592470402F002FD1B6 /* TableViewCell.swift */; };
 		E88B4A5C2470402F002FD1B6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E88B4A5A2470402F002FD1B6 /* TableViewCell.xib */; };
+		E88B4A5E24718721002FD1B6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88B4A5D24718721002FD1B6 /* CoreDataStack.swift */; };
+		E89D5E8A2473FD6E002B44C1 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D5E892473FD6E002B44C1 /* DataProvider.swift */; };
 		E8C9130C246ED0DE0025396E /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C9130B246ED0DE0025396E /* NetworkConstants.swift */; };
 		E8C91313246F0B6A0025396E /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C91312246F0B6A0025396E /* BaseService.swift */; };
 		E8C91316246F1A0E0025396E /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C91315246F1A0E0025396E /* PhotoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E8498D6F2473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E8498D702473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E87D8F7524672B6E00E46497 /* EnternProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnternProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87D8F7824672B6E00E46497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E87D8F7A24672B6E00E46497 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,8 @@
 		E88B4A55247015F6002FD1B6 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		E88B4A592470402F002FD1B6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E88B4A5A2470402F002FD1B6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		E88B4A5D24718721002FD1B6 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E89D5E892473FD6E002B44C1 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		E8C9130B246ED0DE0025396E /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		E8C91312246F0B6A0025396E /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		E8C91315246F1A0E0025396E /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
@@ -56,6 +64,7 @@
 		E87521F3246C350A006FD86F /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				E88B4A5D24718721002FD1B6 /* CoreDataStack.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -63,6 +72,8 @@
 		E87D8F6C24672B6E00E46497 = {
 			isa = PBXGroup;
 			children = (
+				E8498D6F2473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift */,
+				E8498D702473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift */,
 				E87D8F7724672B6E00E46497 /* EnternProject */,
 				E87D8F7624672B6E00E46497 /* Products */,
 			);
@@ -90,9 +101,9 @@
 				E87D8F7E24672B6E00E46497 /* Main.storyboard */,
 				E87D8F8624672B7100E46497 /* LaunchScreen.storyboard */,
 				E87D8F8924672B7100E46497 /* Info.plist */,
-				E87D8F8424672B7100E46497 /* Assets.xcassets */,
 				E87D8F7A24672B6E00E46497 /* SceneDelegate.swift */,
 				E87D8F8124672B6E00E46497 /* EnternProject.xcdatamodeld */,
+				E87D8F8424672B7100E46497 /* Assets.xcassets */,
 				E88B4A592470402F002FD1B6 /* TableViewCell.swift */,
 				E88B4A5A2470402F002FD1B6 /* TableViewCell.xib */,
 			);
@@ -127,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				E8C91312246F0B6A0025396E /* BaseService.swift */,
+				E89D5E892473FD6E002B44C1 /* DataProvider.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -216,10 +228,14 @@
 				E8C9130C246ED0DE0025396E /* NetworkConstants.swift in Sources */,
 				E87D8F9024672DAF00E46497 /* SeconViewController.swift in Sources */,
 				E87D8F7D24672B6E00E46497 /* ViewController.swift in Sources */,
+				E8498D722473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift in Sources */,
 				E88B4A5B2470402F002FD1B6 /* TableViewCell.swift in Sources */,
+				E88B4A5E24718721002FD1B6 /* CoreDataStack.swift in Sources */,
 				E87D8F8324672B6E00E46497 /* EnternProject.xcdatamodeld in Sources */,
 				E88B4A56247015F6002FD1B6 /* UIImageView.swift in Sources */,
+				E89D5E8A2473FD6E002B44C1 /* DataProvider.swift in Sources */,
 				E87D8F7924672B6E00E46497 /* AppDelegate.swift in Sources */,
+				E8498D712473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift in Sources */,
 				E87D8F7B24672B6E00E46497 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
