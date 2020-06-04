@@ -19,6 +19,7 @@ class SecondViewController: UIViewController,UITableViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableViewSecond.delegate = self
         tableViewSecond.dataSource = self
         tableViewSecond.register(UITableViewCell.self, forCellReuseIdentifier: "Cells")

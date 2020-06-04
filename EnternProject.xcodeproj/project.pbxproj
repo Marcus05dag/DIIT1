@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DEBFC9AE0354A7794FC1D31 /* Pods_EnternProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBE8208854AF36D14AFEADD /* Pods_EnternProject.framework */; };
+		E844D5F9247EB3E10042502A /* SignUPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E844D5F8247EB3E10042502A /* SignUPController.swift */; };
+		E844D5FB247FFF380042502A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E844D5FA247FFF380042502A /* CustomTextField.swift */; };
 		E8498D712473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8498D6F2473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift */; };
 		E8498D722473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8498D702473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift */; };
 		E87D8F7924672B6E00E46497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D8F7824672B6E00E46497 /* AppDelegate.swift */; };
@@ -25,9 +28,19 @@
 		E8C9130C246ED0DE0025396E /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C9130B246ED0DE0025396E /* NetworkConstants.swift */; };
 		E8C91313246F0B6A0025396E /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C91312246F0B6A0025396E /* BaseService.swift */; };
 		E8C91316246F1A0E0025396E /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C91315246F1A0E0025396E /* PhotoModel.swift */; };
+		E8CEB6312487E8CD002FE854 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CEB6302487E8CD002FE854 /* TableViewController.swift */; };
+		E8D1CED724815D2100763C29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8D1CED624815D2100763C29 /* GoogleService-Info.plist */; };
+		E8F26CF5247D3C7B00158FB4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F26CF4247D3C7B00158FB4 /* LoginViewController.swift */; };
+		E8F26CF9247D4EDA00158FB4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F26CF8247D4EDA00158FB4 /* Utils.swift */; };
+		E8F272F22483D6E900334CB3 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F272F12483D6E900334CB3 /* MainTabVC.swift */; };
+		E8F272F52484267300334CB3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F272F42484267300334CB3 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		407C6F36A9F9A4CE41548ADA /* Pods-EnternProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnternProject.debug.xcconfig"; path = "Target Support Files/Pods-EnternProject/Pods-EnternProject.debug.xcconfig"; sourceTree = "<group>"; };
+		6EBE8208854AF36D14AFEADD /* Pods_EnternProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnternProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E844D5F8247EB3E10042502A /* SignUPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPController.swift; sourceTree = "<group>"; };
+		E844D5FA247FFF380042502A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E8498D6F2473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E8498D702473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E87D8F7524672B6E00E46497 /* EnternProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnternProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +61,13 @@
 		E8C9130B246ED0DE0025396E /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		E8C91312246F0B6A0025396E /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		E8C91315246F1A0E0025396E /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		E8CEB6302487E8CD002FE854 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E8D1CED624815D2100763C29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8F26CF4247D3C7B00158FB4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E8F26CF8247D4EDA00158FB4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E8F272F12483D6E900334CB3 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
+		E8F272F42484267300334CB3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		FCD088762BC9692671D116C6 /* Pods-EnternProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnternProject.release.xcconfig"; path = "Target Support Files/Pods-EnternProject/Pods-EnternProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,15 +75,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEBFC9AE0354A7794FC1D31 /* Pods_EnternProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A2CC11D7F523E16D8F7EB48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EBE8208854AF36D14AFEADD /* Pods_EnternProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		522BB8F2C576286BD1EC5463 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				407C6F36A9F9A4CE41548ADA /* Pods-EnternProject.debug.xcconfig */,
+				FCD088762BC9692671D116C6 /* Pods-EnternProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E844D5F7247EB3BA0042502A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E844D5F8247EB3E10042502A /* SignUPController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		E87521F3246C350A006FD86F /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				E8498D6F2473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift */,
+				E8498D702473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift */,
 				E88B4A5D24718721002FD1B6 /* CoreDataStack.swift */,
 			);
 			path = CoreData;
@@ -72,10 +120,10 @@
 		E87D8F6C24672B6E00E46497 = {
 			isa = PBXGroup;
 			children = (
-				E8498D6F2473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift */,
-				E8498D702473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift */,
 				E87D8F7724672B6E00E46497 /* EnternProject */,
 				E87D8F7624672B6E00E46497 /* Products */,
+				522BB8F2C576286BD1EC5463 /* Pods */,
+				3A2CC11D7F523E16D8F7EB48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,20 +138,21 @@
 		E87D8F7724672B6E00E46497 /* EnternProject */ = {
 			isa = PBXGroup;
 			children = (
+				E8F272F32484263200334CB3 /* Controlles */,
+				E8F26CF3247D3C2700158FB4 /* Register */,
 				E88B4A53247015AA002FD1B6 /* Library */,
 				E8C91314246F19F30025396E /* Models */,
 				E8C91311246F09730025396E /* Service */,
 				E8C9130A246ECBEF0025396E /* Resourcess */,
 				E87521F3246C350A006FD86F /* CoreData */,
 				E87D8F7824672B6E00E46497 /* AppDelegate.swift */,
-				E87D8F7C24672B6E00E46497 /* ViewController.swift */,
-				E87D8F8F24672DAF00E46497 /* SeconViewController.swift */,
+				E87D8F7A24672B6E00E46497 /* SceneDelegate.swift */,
 				E87D8F7E24672B6E00E46497 /* Main.storyboard */,
 				E87D8F8624672B7100E46497 /* LaunchScreen.storyboard */,
 				E87D8F8924672B7100E46497 /* Info.plist */,
-				E87D8F7A24672B6E00E46497 /* SceneDelegate.swift */,
 				E87D8F8124672B6E00E46497 /* EnternProject.xcdatamodeld */,
 				E87D8F8424672B7100E46497 /* Assets.xcassets */,
+				E8D1CED624815D2100763C29 /* GoogleService-Info.plist */,
 				E88B4A592470402F002FD1B6 /* TableViewCell.swift */,
 				E88B4A5A2470402F002FD1B6 /* TableViewCell.xib */,
 			);
@@ -151,6 +200,53 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E8F26CF3247D3C2700158FB4 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				E8F272F02483D69D00334CB3 /* UITabBarController */,
+				E8F26CF7247D4D4600158FB4 /* Utils */,
+				E844D5F7247EB3BA0042502A /* SignUp */,
+				E8F26CF6247D442E00158FB4 /* Login */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		E8F26CF6247D442E00158FB4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E8F26CF4247D3C7B00158FB4 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E8F26CF7247D4D4600158FB4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E8F26CF8247D4EDA00158FB4 /* Utils.swift */,
+				E844D5FA247FFF380042502A /* CustomTextField.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E8F272F02483D69D00334CB3 /* UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E8F272F12483D6E900334CB3 /* MainTabVC.swift */,
+			);
+			path = UITabBarController;
+			sourceTree = "<group>";
+		};
+		E8F272F32484263200334CB3 /* Controlles */ = {
+			isa = PBXGroup;
+			children = (
+				E87D8F8F24672DAF00E46497 /* SeconViewController.swift */,
+				E8F272F42484267300334CB3 /* FeedViewController.swift */,
+				E87D8F7C24672B6E00E46497 /* ViewController.swift */,
+				E8CEB6302487E8CD002FE854 /* TableViewController.swift */,
+			);
+			path = Controlles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E87D8F8C24672B7100E46497 /* Build configuration list for PBXNativeTarget "EnternProject" */;
 			buildPhases = (
+				C1C9469B20EA08174F5BEAE4 /* [CP] Check Pods Manifest.lock */,
 				E87D8F7124672B6E00E46497 /* Sources */,
 				E87D8F7224672B6E00E46497 /* Frameworks */,
 				E87D8F7324672B6E00E46497 /* Resources */,
+				B34B917BA2EB6697CC5F4E09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +309,7 @@
 			files = (
 				E87D8F8824672B7100E46497 /* LaunchScreen.storyboard in Resources */,
 				E88B4A5C2470402F002FD1B6 /* TableViewCell.xib in Resources */,
+				E8D1CED724815D2100763C29 /* GoogleService-Info.plist in Resources */,
 				E87D8F8524672B7100E46497 /* Assets.xcassets in Resources */,
 				E87D8F8024672B6E00E46497 /* Main.storyboard in Resources */,
 			);
@@ -218,22 +317,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B34B917BA2EB6697CC5F4E09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnternProject/Pods-EnternProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnternProject/Pods-EnternProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnternProject/Pods-EnternProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C9469B20EA08174F5BEAE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnternProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E87D8F7124672B6E00E46497 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E8C91316246F1A0E0025396E /* PhotoModel.swift in Sources */,
+				E8CEB6312487E8CD002FE854 /* TableViewController.swift in Sources */,
 				E8C91313246F0B6A0025396E /* BaseService.swift in Sources */,
+				E8F272F52484267300334CB3 /* FeedViewController.swift in Sources */,
 				E8C9130C246ED0DE0025396E /* NetworkConstants.swift in Sources */,
+				E8F26CF5247D3C7B00158FB4 /* LoginViewController.swift in Sources */,
 				E87D8F9024672DAF00E46497 /* SeconViewController.swift in Sources */,
 				E87D8F7D24672B6E00E46497 /* ViewController.swift in Sources */,
 				E8498D722473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift in Sources */,
+				E8F272F22483D6E900334CB3 /* MainTabVC.swift in Sources */,
+				E8F26CF9247D4EDA00158FB4 /* Utils.swift in Sources */,
+				E844D5FB247FFF380042502A /* CustomTextField.swift in Sources */,
 				E88B4A5B2470402F002FD1B6 /* TableViewCell.swift in Sources */,
 				E88B4A5E24718721002FD1B6 /* CoreDataStack.swift in Sources */,
 				E87D8F8324672B6E00E46497 /* EnternProject.xcdatamodeld in Sources */,
 				E88B4A56247015F6002FD1B6 /* UIImageView.swift in Sources */,
 				E89D5E8A2473FD6E002B44C1 /* DataProvider.swift in Sources */,
+				E844D5F9247EB3E10042502A /* SignUPController.swift in Sources */,
 				E87D8F7924672B6E00E46497 /* AppDelegate.swift in Sources */,
 				E8498D712473095D007C9DA6 /* PhotoEntity+CoreDataClass.swift in Sources */,
 				E87D8F7B24672B6E00E46497 /* SceneDelegate.swift in Sources */,
@@ -378,6 +526,7 @@
 		};
 		E87D8F8D24672B7100E46497 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407C6F36A9F9A4CE41548ADA /* Pods-EnternProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -395,6 +544,7 @@
 		};
 		E87D8F8E24672B7100E46497 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD088762BC9692671D116C6 /* Pods-EnternProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
