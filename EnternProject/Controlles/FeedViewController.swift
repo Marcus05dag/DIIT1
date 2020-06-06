@@ -8,17 +8,28 @@
 
 import UIKit
 import Firebase
+
 private let reuseIdentifier = "Cell"
 
 class FeedViewController: UICollectionViewController {
+    
+    let photos: [String] = []
 
+    
+    
+    //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
 
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        
         configureLogOutButton()
 
     }
@@ -29,25 +40,26 @@ class FeedViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return photos.count
+//    }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return photos.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
-        // Configure the cell
+        
     
         return cell
     }
     
+    //MARK:ConfigureLogOut
     fileprivate func configureLogOutButton () {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Выйти", style: .plain, target: self, action: #selector(handleLogOut))
         navigationItem.leftBarButtonItem?.tintColor = .black

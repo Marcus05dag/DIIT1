@@ -21,7 +21,7 @@ class SecondViewController: UIViewController,UITableViewDelegate{
         super.viewDidLoad()
         
         tableViewSecond.delegate = self
-        tableViewSecond.dataSource = self
+        
         tableViewSecond.register(UITableViewCell.self, forCellReuseIdentifier: "Cells")
         tableViewSecond.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier : "imageCell")
         

@@ -23,11 +23,13 @@ class MainTabVC: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
             
         
-        let feed = createNavController(viewController: FeedViewController(collectionViewLayout: UICollectionViewFlowLayout()), title: "Feed ", selectedImage: #imageLiteral(resourceName: "home_selected"), unselectedImagee: #imageLiteral(resourceName: "home_unselected"))
+//        let feed = createNavController(viewController: FeedViewController(collectionViewLayout: UICollectionViewFlowLayout()), title: "Feed ", selectedImage: #imageLiteral(resourceName: "home_selected"), unselectedImagee: #imageLiteral(resourceName: "home_unselected"))
+        
+        let feed = createNavController(viewController: TablController(), title: "Feed ", selectedImage: #imageLiteral(resourceName: "home_selected"), unselectedImagee: #imageLiteral(resourceName: "home_unselected"))
         
         let search = createNavController(viewController: TableViewController(), title: "Search", selectedImage: #imageLiteral(resourceName: "search_selected"), unselectedImagee: #imageLiteral(resourceName: "search_selected"))
         
-//        let newPost = createNavController(viewController: UIViewController(), title: "Post", selectedImage: #imageLiteral(resourceName: "Icon-App-20x20"), unselectedImagee: #imageLiteral(resourceName: "Icon-App-29x29"))
+//        let newPost = createNavController(viewController: TableSecondController(), title: "Post", selectedImage: #imageLiteral(resourceName: "Icon-App-20x20"), unselectedImagee: #imageLiteral(resourceName: "Icon-App-29x29"))
 //
 //        let likes = createNavController(viewController: UIViewController(), title: "Likes", selectedImage: #imageLiteral(resourceName: "like_selected"), unselectedImagee: #imageLiteral(resourceName: "like_unselected"))
 //

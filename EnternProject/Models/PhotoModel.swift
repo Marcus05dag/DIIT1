@@ -6,9 +6,14 @@
 //  Copyright © 2020 Magomed Inc. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // json это словарь, а чтоб свифт начал читать наши структуры , нужно сделать их словарями
+
+
+
+
+
 
 struct PhotoModel: Codable {
     let id: String
@@ -24,3 +29,4 @@ struct urlsModel:Codable {
     let small:String
     
 }
+

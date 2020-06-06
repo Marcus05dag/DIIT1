@@ -25,30 +25,30 @@ class ViewController: UIViewController {
        
         
     }
-    //MARK: COREDATA
-    //извлечение данных из кор даты
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        //1 получаем ссылку на делегат приложения
-//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-//            return
-//        }
-//        //получаем ссылку на его контейнер
-//        let managedContext = appDelegate.persistentContainer.viewContext
-//
-//        //NSFetchRequest отвечает за получение данных из базы данных. EntityName - нужен чтоб получить все объекты определенного объекта( в нашем случае Person)
-//        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Person")
-//
-//
-//        //мы передаем запрос на получение данных в контекст объекта. Fetch вовзращает массив объектов
-//        do {
-//            people = try managedContext.fetch(fetchRequest)
-//
-//        } catch let error as NSError {
-//            print("could not fetch. \(error) , \(error.userInfo)")
-//        }
-//
-//    }
+//    MARK: COREDATA
+//    извлечение данных из кор даты
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //1 получаем ссылку на делегат приложения
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        //получаем ссылку на его контейнер
+        let managedContext = appDelegate.persistentContainer.viewContext
+
+        //NSFetchRequest отвечает за получение данных из базы данных. EntityName - нужен чтоб получить все объекты определенного объекта( в нашем случае Person)
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Person")
+
+
+        //мы передаем запрос на получение данных в контекст объекта. Fetch вовзращает массив объектов
+        do {
+            people = try managedContext.fetch(fetchRequest)
+
+        } catch let error as NSError {
+            print("could not fetch. \(error) , \(error.userInfo)")
+        }
+
+    }
     
     
     

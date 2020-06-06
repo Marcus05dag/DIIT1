@@ -10,7 +10,6 @@ target 'EnternProject' do
 	pod 'Firebase/Auth'
  	pod 'Firebase/Database'
  	pod 'Firebase/Core'
-
  	pod 'Firebase/Messaging'
  	pod 'Firebase/Firestore’
  	pod 'ActiveLabel'
