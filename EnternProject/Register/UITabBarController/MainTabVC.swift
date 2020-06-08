@@ -29,11 +29,7 @@ class MainTabVC: UITabBarController, UITabBarControllerDelegate {
         
         let search = createNavController(viewController: TablController(), title: "Search", selectedImage: #imageLiteral(resourceName: "search_selected"), unselectedImagee: #imageLiteral(resourceName: "search_selected"))
         
-//        let newPost = createNavController(viewController: TableSecondController(), title: "Post", selectedImage: #imageLiteral(resourceName: "Icon-App-20x20"), unselectedImagee: #imageLiteral(resourceName: "Icon-App-29x29"))
-//
-//        let likes = createNavController(viewController: UIViewController(), title: "Likes", selectedImage: #imageLiteral(resourceName: "like_selected"), unselectedImagee: #imageLiteral(resourceName: "like_unselected"))
-//
-//        let profile = createNavController(viewController: UIViewController(), title: "Profile", selectedImage: #imageLiteral(resourceName: "profile_selected"), unselectedImagee: #imageLiteral(resourceName: "profile_unselected"))
+
         viewControllers = [feed,search/*newPost,likes,
              profile */]
         
