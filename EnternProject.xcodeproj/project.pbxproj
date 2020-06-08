@@ -27,8 +27,6 @@
 		E88B4A5E24718721002FD1B6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88B4A5D24718721002FD1B6 /* CoreDataStack.swift */; };
 		E89D5E8A2473FD6E002B44C1 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D5E892473FD6E002B44C1 /* DataProvider.swift */; };
 		E8ACCC0C248A9E1C0068F242 /* TablController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ACCC0B248A9E1C0068F242 /* TablController.swift */; };
-		E8ACCC0F248A9EFA0068F242 /* TableSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ACCC0D248A9EFA0068F242 /* TableSecondCell.swift */; };
-		E8ACCC10248A9EFA0068F242 /* TableSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8ACCC0E248A9EFA0068F242 /* TableSecondCell.xib */; };
 		E8C9130C246ED0DE0025396E /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C9130B246ED0DE0025396E /* NetworkConstants.swift */; };
 		E8C91313246F0B6A0025396E /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C91312246F0B6A0025396E /* BaseService.swift */; };
 		E8C91316246F1A0E0025396E /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C91315246F1A0E0025396E /* PhotoModel.swift */; };
@@ -64,8 +62,6 @@
 		E88B4A5D24718721002FD1B6 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		E89D5E892473FD6E002B44C1 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		E8ACCC0B248A9E1C0068F242 /* TablController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablController.swift; sourceTree = "<group>"; };
-		E8ACCC0D248A9EFA0068F242 /* TableSecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSecondCell.swift; sourceTree = "<group>"; };
-		E8ACCC0E248A9EFA0068F242 /* TableSecondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableSecondCell.xib; sourceTree = "<group>"; };
 		E8C9130B246ED0DE0025396E /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		E8C91312246F0B6A0025396E /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		E8C91315246F1A0E0025396E /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
@@ -253,8 +249,6 @@
 				E87D8F8F24672DAF00E46497 /* SecondViewController.swift */,
 				E8ACCC0B248A9E1C0068F242 /* TablController.swift */,
 				E841C0A6248BB8DC00F6CB10 /* ImageViewCell.swift */,
-				E8ACCC0D248A9EFA0068F242 /* TableSecondCell.swift */,
-				E8ACCC0E248A9EFA0068F242 /* TableSecondCell.xib */,
 			);
 			path = Controlles;
 			sourceTree = "<group>";
@@ -323,7 +317,6 @@
 				E88B4A5C2470402F002FD1B6 /* TableViewCell.xib in Resources */,
 				E8D1CED724815D2100763C29 /* GoogleService-Info.plist in Resources */,
 				E87D8F8524672B7100E46497 /* Assets.xcassets in Resources */,
-				E8ACCC10248A9EFA0068F242 /* TableSecondCell.xib in Resources */,
 				E87D8F8024672B6E00E46497 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,7 +379,6 @@
 				E8C9130C246ED0DE0025396E /* NetworkConstants.swift in Sources */,
 				E8F26CF5247D3C7B00158FB4 /* LoginViewController.swift in Sources */,
 				E87D8F9024672DAF00E46497 /* SecondViewController.swift in Sources */,
-				E8ACCC0F248A9EFA0068F242 /* TableSecondCell.swift in Sources */,
 				E87D8F7D24672B6E00E46497 /* ViewController.swift in Sources */,
 				E8498D722473095D007C9DA6 /* PhotoEntity+CoreDataProperties.swift in Sources */,
 				E8F272F22483D6E900334CB3 /* MainTabVC.swift in Sources */,

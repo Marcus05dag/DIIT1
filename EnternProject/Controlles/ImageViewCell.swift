@@ -11,9 +11,11 @@ import UIKit
 
 class ImageViewCell: UITableViewCell {
     
+    
     var mainImageView: UIImageView = {
        var imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        
         
         return imageView
     }()
@@ -28,6 +30,12 @@ class ImageViewCell: UITableViewCell {
         mainImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         mainImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         
+        mainImageView.contentMode = .scaleAspectFill
+        mainImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        mainImageView.clipsToBounds = true
+        
+        
+        
        
     }
     
@@ -37,3 +45,9 @@ class ImageViewCell: UITableViewCell {
     
     
 }
+
+
+
+
+
+

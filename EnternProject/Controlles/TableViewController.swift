@@ -8,6 +8,7 @@
 
 import UIKit
 import  CoreData
+import Firebase
 
 class TableViewController: UITableViewController{
     
@@ -16,6 +17,7 @@ class TableViewController: UITableViewController{
         //MARK:ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureLogOutButton ()
 
         view.backgroundColor = .red
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -30,6 +32,39 @@ class TableViewController: UITableViewController{
         
         
     }
+    
+    //MARK:ConfigureLogOut
+    fileprivate func configureLogOutButton () {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Выйти", style: .plain, target: self, action: #selector(handleLogOut))
+        navigationItem.leftBarButtonItem?.tintColor = .black
+        
+        
+    }
+
+    
+    @objc fileprivate func handleLogOut () {
+        
+        print("LogOut")
+        
+        //set up action
+        
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Выход", style: .destructive, handler: { (_) in
+            do {
+                try Auth.auth().signOut()
+                let loginVC = LoginViewController()
+                let navController = UINavigationController(rootViewController: loginVC)
+                navController.modalPresentationStyle = .fullScreen
+                self.present(navController, animated: true, completion: nil)
+            }catch {
+                print("Failed to sign out")
+            }
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Отмена", style: .cancel))
+        present(alert,animated: true)
+    }
+    
     //MARK:FetchReq
     fileprivate func fetchReq () {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else  {
@@ -147,49 +182,12 @@ class TableViewController: UITableViewController{
         
     }
     
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    override func tableView (_ tableView: UITableView, canEditRowAt indexPath : IndexPath) -> Bool {
+              
+              
+              
+              
+              return true
+          }
 }

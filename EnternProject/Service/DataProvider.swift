@@ -26,7 +26,7 @@ final class DataProvider {
                   //мы делаем проверку
                   if let photos = photoEntyties, !photos.isEmpty {
                       let photoModels = photos.map {
-                          PhotoModel(id: $0.id ?? "" , description: $0.desc , urls: .init(regular: $0.url ?? "" , small: ""))
+                        PhotoModel(id: $0.id ?? "" , description: $0.desc , urls: .init(regular: $0.url ?? "" , small: ""))
                       }
                       
                       

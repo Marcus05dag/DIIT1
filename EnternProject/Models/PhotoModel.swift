@@ -13,6 +13,7 @@ import UIKit
 
 
 
+    
 
 
 struct PhotoModel: Codable {
@@ -29,4 +30,5 @@ struct urlsModel:Codable {
     let small:String
     
 }
+
 
