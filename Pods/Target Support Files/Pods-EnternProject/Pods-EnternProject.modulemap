@@ -1,0 +1,6 @@
+framework module Pods_EnternProject {
+  umbrella header "Pods-EnternProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
