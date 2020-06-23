@@ -23,15 +23,14 @@ class MainTabVC: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
             
         
-//        let feed = createNavController(viewController: FeedViewController(collectionViewLayout: UICollectionViewFlowLayout()), title: "Feed ", selectedImage: #imageLiteral(resourceName: "home_selected"), unselectedImagee: #imageLiteral(resourceName: "home_unselected"))
+
         
         let feed = createNavController(viewController: TableViewController(), title: "Feed ", selectedImage: #imageLiteral(resourceName: "home_selected"), unselectedImagee: #imageLiteral(resourceName: "home_unselected"))
         
         let search = createNavController(viewController: TablController(), title: "Search", selectedImage: #imageLiteral(resourceName: "search_selected"), unselectedImagee: #imageLiteral(resourceName: "search_selected"))
         
 
-        viewControllers = [feed,search/*newPost,likes,
-             profile */]
+        viewControllers = [feed,search]
         
         
         ifuserLogedIn()
