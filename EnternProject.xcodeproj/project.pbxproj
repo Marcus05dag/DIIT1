@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8DEBFC9AE0354A7794FC1D31 /* Pods_EnternProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBE8208854AF36D14AFEADD /* Pods_EnternProject.framework */; };
+		E83EDAA524914F4F00394845 /* AlamoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EDAA424914F4F00394845 /* AlamoFile.swift */; };
 		E841C0A7248BB8DC00F6CB10 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E841C0A6248BB8DC00F6CB10 /* ImageViewCell.swift */; };
 		E844D5F9247EB3E10042502A /* SignUPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E844D5F8247EB3E10042502A /* SignUPController.swift */; };
 		E844D5FB247FFF380042502A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E844D5FA247FFF380042502A /* CustomTextField.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		407C6F36A9F9A4CE41548ADA /* Pods-EnternProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnternProject.debug.xcconfig"; path = "Target Support Files/Pods-EnternProject/Pods-EnternProject.debug.xcconfig"; sourceTree = "<group>"; };
 		6EBE8208854AF36D14AFEADD /* Pods_EnternProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnternProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83EDAA424914F4F00394845 /* AlamoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFile.swift; sourceTree = "<group>"; };
 		E841C0A6248BB8DC00F6CB10 /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
 		E844D5F8247EB3E10042502A /* SignUPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPController.swift; sourceTree = "<group>"; };
 		E844D5FA247FFF380042502A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			children = (
 				E8C91312246F0B6A0025396E /* BaseService.swift */,
 				E89D5E892473FD6E002B44C1 /* DataProvider.swift */,
+				E83EDAA424914F4F00394845 /* AlamoFile.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				E8F272F22483D6E900334CB3 /* MainTabVC.swift in Sources */,
 				E8F26CF9247D4EDA00158FB4 /* Utils.swift in Sources */,
 				E844D5FB247FFF380042502A /* CustomTextField.swift in Sources */,
+				E83EDAA524914F4F00394845 /* AlamoFile.swift in Sources */,
 				E88B4A5E24718721002FD1B6 /* CoreDataStack.swift in Sources */,
 				E87D8F8324672B6E00E46497 /* EnternProject.xcdatamodeld in Sources */,
 				E88B4A56247015F6002FD1B6 /* UIImageView.swift in Sources */,

@@ -31,7 +31,7 @@ class BaseService  {
         //№3
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
-                error.localizedDescription
+                print(error.localizedDescription)
                 onError(error)
                 
                 return

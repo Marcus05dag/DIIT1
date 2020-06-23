@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import SDWebImage
 
 class TablController: UITableViewController{
     
@@ -31,9 +32,24 @@ class TablController: UITableViewController{
 //        tableView.register(TableViewCell.self, forCellReuseIdentifier: "Cell")
 //        tableView.register(UINib(nibName: "tableCustomCell", bundle: nil), forCellReuseIdentifier: "CellCus")
         loadData()
+        fetchPhoto()
+        
+        
+      
     }
     
+    
+   
+        
+  
+    
     func loadData() {
+          service.loadCache { [weak self] (photoses) in
+              self?.photoses = photoses
+               print("photos count" , photoses.count)
+              self?.tableView.reloadData()
+                   }
+        
         service.loadPhotos(onComplete: { [weak self] (photoses) in
             self?.photoses = photoses
             self?.tableView.reloadData()
@@ -44,6 +60,8 @@ class TablController: UITableViewController{
         
         
     }
+    
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             tableView.beginUpdates()
@@ -96,6 +114,7 @@ class TablController: UITableViewController{
         cell.mainImageView.loadImage(by: model.urls.regular)
 //        cell.mainImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         cell.mainImageView.clipsToBounds = true
+//        cell.mainImageView.sd_setImage(with: URL(string: NetworkConstants.baseURL + "/photos/?count=10&client_id=" + NetworkConstants.accessKey), completed: nil)
         
         
         
